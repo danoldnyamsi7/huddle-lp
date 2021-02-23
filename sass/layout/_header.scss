@@ -1,0 +1,194 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    padding: 0 5rem;
+
+    background-color: $color-neutral-veryPaleCyan;
+    background-image: url(../../img/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+
+    @media only screen and (max-width: $bp-sm) {
+        background-image: url(../../img/bg-hero-mobile.svg);
+        height: 100%;
+        padding: 0 3rem;
+        padding-bottom: 5rem;
+    }
+
+    &__logo-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+        min-height: 15%;
+
+        @media only screen and (max-width: $bp-sm) {
+            padding: 5rem 0;
+        }
+
+        @media only screen and (max-width: $bp-sm-2) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 7rem;
+            padding: 0;
+            margin-top: 5rem;
+        }
+    }
+
+    &__logo {
+        width: 20rem;
+
+        @media only screen and (max-width: $bp-sm-2) {
+            width: 30rem;
+        }
+
+        @media only screen and (max-width: $bp-xs) {
+            width: 23rem;
+        }
+    }
+
+    &__btn {
+        &:hover {
+            color: $color-neutral-grayishBlue;
+        }
+
+        &:active {
+            color: $color-neutral-veryDarkCyan;
+        }
+
+        @media only screen and (max-width: $bp-sm-2) {
+            display: none;
+        }
+    }
+
+    &__main-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80%;
+
+        // padding: 0 2rem;
+        margin-top: 3rem;
+
+        @media only screen and (max-width: $bp-sm) {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+
+    &__text-box {
+        // flex-basis: 45%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        min-height: 85%;
+        padding: 3rem;
+        padding-right: 4rem;
+        max-width: 45%;
+
+        @media only screen and (min-width: $bp-xl) {
+            max-width: 50%;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            align-items: center;
+            height: 70rem;
+            text-align: center;
+            padding: 0;
+            max-width: 100%;
+        }
+
+        @media only screen and (max-width: $bp-sm-2) {
+            height: 60rem;
+        }
+
+        @media only screen and (max-width: $bp-xs) {
+            height: 50rem;
+        }
+    }
+
+    &__heading {
+        font-size: 4rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: $color-neutral-veryDarkCyan;
+        text-transform: capitalize;
+
+        @media only screen and (min-width: $bp-xl) {
+            font-size: 5.5rem;
+        }
+
+        @media only screen and (max-width: $bp-lg) {
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-md) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            font-size: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-sm-2) {
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-xs) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: $color-neutral-veryDarkCyan;
+
+        @media only screen and (min-width: $bp-xl) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            font-size: 3rem;
+            line-height: 1.4;
+        }
+
+        @media only screen and (max-width: $bp-sm-2) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-xs) {
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+    }
+
+    &__img-box {
+        max-width: 69rem;
+        // padding-right: 3rem;
+        flex: 2;
+
+        @media only screen and (min-width: $bp-xl) {
+            max-width: 49%;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            padding: 0 5rem;
+        }
+
+        @media only screen and (max-width: $bp-sm-2) {
+            padding: 0;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

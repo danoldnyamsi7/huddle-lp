@@ -1,0 +1,69 @@
+.cta {
+    width: 20rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: 10rem;
+
+    background-color: #ffffff;
+    color: $color-neutral-veryDarkCyan;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    &--pink {
+        background-color: $color-primary-pink;
+        color: #ffffff;
+
+        &:hover {
+            background-color: rgba($color-primary-pink, 0.7);
+        }
+    }
+
+    &--lg {
+        width: 28rem;
+        height: 5.6rem;
+
+        @media only screen and (max-width: $bp-sm) {
+            width: 40rem;
+            height: 8rem;
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-sm-2) {
+            width: 28rem;
+            height: 5.6rem;
+        }
+    }
+
+    &--xl {
+        width: 40rem;
+        height: 8rem;
+        font-size: 2rem;
+
+        @media only screen and (max-width: $bp-sm) {
+            width: 30rem;
+            height: 6rem;
+        }
+
+        @media only screen and (max-width: $bp-xs) {
+            width: 25rem;
+            height: 5.5rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    &--shadow-low {
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+    }
+
+    &--shadow-md {
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

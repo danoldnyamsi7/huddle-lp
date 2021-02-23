@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+//Scroll Bar
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1rem = 10px
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+}
+
+// ::selection {
+//     background-color: $color-primary;
+//     color: $color-white;
+// }
+
+// ::selection {
+//     background-color: $color-primary;
+//     color: $color-white;
+// }
+
+// Scroll Bar
+/* Works on Firefox */
+// * {
+//     scrollbar-width: thin;
+//     scrollbar-color: blue orange;
+// }
+
+// /* Works on Chrome, Edge, and Safari */
+// *::-webkit-scrollbar {
+//     width: 12px;
+// }
+
+// *::-webkit-scrollbar-track {
+//     background: orange;
+// }
+
+// *::-webkit-scrollbar-thumb {
+//     background-color: blue;
+//     border-radius: 20px;
+//     border: 3px solid orange;
+// }
